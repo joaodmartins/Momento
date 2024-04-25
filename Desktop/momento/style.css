@@ -262,8 +262,8 @@ body{
 }
 
 .carrousel-teams img{
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 60px;
 }
 
 .carrousel-teams p{
@@ -375,7 +375,7 @@ body{
           
 .left .bottom img {
     height: 70px;
-    width: 70px;
+    width: auto;
 }
         
 .left .bottom p {
