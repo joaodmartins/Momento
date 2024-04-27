@@ -102,6 +102,7 @@ body{
     clear: both;
     height: 95px;
     align-content: center;
+    cursor: pointer;
 }
 
 .submenu ul li:hover {
