@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FUTSAL</title>
+</head>
+<body>
+    <div class="caixa">
+        <div class="sport-row">
+            <div class="img-container" style="margin-left: 7px;" onclick="redirectTo('index.html')">
+                <p>ALL</p>
+            </div>
+            <div class="img-container" onclick="redirectTo('futebol.html')">
+                <img src="images/others/Futsal.png" alt="">
+            </div>
+            <div class="img-container" style="background-color: #383d4b;" onclick="redirectTo('futsal.html')">
+                <img src="images/others/Futsal.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('basket.html')">
+                <img src="images/others/Basquetebol.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('hoquei.html')">
+                <img src="images/others/Hoquei.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('andebol.html')">
+                <img src="images/others/Andebol.png" alt="">
+            </div>
+            <div class="img-container"onclick="redirectTo('volei.html')">
+                <img src="images/others/Voleibol.png" alt="">
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-venus" aria-hidden="true" ></i>
+                <div class="submenu">
+                    <ul>
+                        <li style="border-top-left-radius: 15px; border-top-right-radius: 15px;" onclick="redirectTo('futsal.html')">
+                            <a href="futsal.html">ALL</a>
+                        </li>
+                        <li onclick="redirectTo('futsalm.html')">
+                            <i class="fa fa-mars" aria-hidden="true"></i><a href="futsalm.html">Masculino</a>
+                        </li>
+                        <li style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" onclick="redirectTo('futsalf.html')">
+                            <i class="fa fa-venus" aria-hidden="true" style="color: #0c8bff;"></i><a href="futsalf.html" style="margin-left: 31px; color: #0c8bff;">Feminino</a><i class="fa fa-check" aria-hidden="true" style="color: #0c8bff;"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="box-row">
+            <p>Games</p>
+            <p style="color: #383d4b;">0</p>
+          </div>
+          <div class="box-row">
+            <p>Venues</p>
+            <p style="color: #383d4b;">0</p>
+          </div>
+          <div class="box-row">
+            <p>Teams</p>
+            <p style="color: #383d4b;">0</p>
+          </div>
+          <div class="box-row">
+            <p>Goals</p>
+            <p style="color: #383d4b;">0</p>
+          </div>
+          <div class="box-row">
+            <p>Hrs:Mins</p>
+            <p style="color: #383d4b;">00:00</p>
+          </div>
+        </div>
+        <div class="wrapper">
+            <div class="carrousel">
+                <div class="container">
+                    <div class="box"></div>
+                </div>
+                <div class="container">
+                    <div class="box"></div>
+                </div>
+                <div class="container">
+                    <div class="box"></div>
+                </div>
+                <div class="container">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-teams">
+            <div class="carrousel-teams">
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+                <div class="empty-item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="redirectTo.js"></script>
+</body>
+</html>
