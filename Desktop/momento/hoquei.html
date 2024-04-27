@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HÓQUEI</title>
+</head>
+<body>
+    <div class="caixa">
+        <div class="sport-row">
+            <div class="img-container" style="margin-left: 7px;" onclick="redirectTo('index.html')">
+                <p>ALL</p>
+            </div>
+            <div class="img-container" onclick="redirectTo('futebol.html')">
+                <img src="images/others/Futsal.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('futsal.html')">
+                <img src="images/others/Futsal.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('basket.html')">
+                <img src="images/others/Basquetebol.png" alt="">
+            </div>
+            <div class="img-container" style="background-color: #383d4b;" onclick="redirectTo('hoquei.html')">
+                <img src="images/others/Hoquei.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('andebol.html')">
+                <img src="images/others/Andebol.png" alt="">
+            </div>
+            <div class="img-container" onclick="redirectTo('volei.html')">
+                <img src="images/others/Voleibol.png" alt="">
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-bars" aria-hidden="true" ></i>
+                <div class="submenu">
+                    <ul>
+                        <li style="border-top-left-radius: 15px; border-top-right-radius: 15px;" onclick="redirectTo('hoquei.html')">
+                            <a href="hoquei.html" style="color: #0c8bff;">ALL</a><i class="fa fa-check" aria-hidden="true" style="color: #0c8bff;"></i>
+                        </li>
+                        <li onclick="redirectTo('hoqueim.html')">
+                            <i class="fa fa-mars" aria-hidden="true" ></i><a href="hoqueim.html">Masculino</a>
+                        </li>
+                        <li style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" onclick="redirectTo('hoqueif.html')">
+                            <i class="fa fa-venus" aria-hidden="true" ></i><a href="hoqueif.html" style="margin-left: 31px;">Feminino</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="box-row">
+            <p>Games</p>
+            <p>...</p>
+          </div>
+          <div class="box-row">
+            <p>Venues</p>
+            <p>...</p>
+          </div>
+          <div class="box-row">
+            <p>Teams</p>
+            <p>...</p>
+          </div>
+          <div class="box-row">
+            <p>Goals</p>
+            <p>...</p>
+          </div>
+          <div class="box-row">
+            <p>Hrs:Mins</p>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="wrapper">
+            <div class="carrousel">
+                <div class="container">
+                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavAngra.jpg');">
+                        <div class="text-top-left">Pavilhão Municipal<br>de Angra do Heroísmo</div>
+                        <div class="times-box">
+                          <div class="text-top-right">6x</div>
+                        </div>
+                        <div class="text-bottom-left">
+                          <img src="images/others/BandeiraPortugal.png" alt="">
+                          <p>Angra do Heroísmo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavDrSalvadorMachado.png');">
+                      <div class="text-top-left">Pavilhão Dr.<br>Salvador Machado</div>
+                      <div class="times-box">
+                        <div class="text-top-right">1x</div>
+                      </div>
+                      <div class="text-bottom-left">
+                        <img src="images/others/BandeiraPortugal.png" alt="">
+                        <p>Oliveira de Azeméis</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavLavandeira.png');">
+                      <div class="text-top-left">Pavilhão Municipal<br>da Lavandeira</div>
+                      <div class="times-box">
+                        <div class="text-top-right">1x</div>
+                      </div>
+                      <div class="text-bottom-left">
+                        <img src="images/others/BandeiraPortugal.png" alt="">
+                        <p>Santa Maria da Feira</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavValeCambra.png');">
+                      <div class="text-top-left">Pavilhão Municipal<br>de Vale de Cambra</div>
+                      <div class="times-box">
+                        <div class="text-top-right">1x</div>
+                      </div>
+                      <div class="text-bottom-left">
+                        <img src="images/others/BandeiraPortugal.png" alt="">
+                        <p>Vale de Cambra</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-teams">
+            <div class="carrousel-teams">
+                <div class="item">
+                    <img src="images/teams/nucleo_sportinguista_it.gif" alt="img" draggable="false">
+                    <p>6x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
+                    <p>2x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/Oliveirense.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/BIR.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/BomSucesso.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/HACambra.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/Cucujaes.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/CAFeira.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/CAFeira.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/InfanteSagres.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+                <div class="item">
+                    <img src="images/teams/Mealhada.png" alt="img" draggable="false">
+                    <p>1x</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ano" style="margin-top: -80px;">
+        <div class="row-year">
+          <h1>2024</h1>
+        </div>
+        <div class="ticket">
+            <div class="faixa-left"></div>
+            <div class="left" style="background-color: rgb(19, 138, 55);">
+              <div class="top">
+                <p>CAMPEONATO NACIONAL DE HOQUEI FEMININO</p>
+                <h2>1 - 3</h2>
+              </div>
+              <div class="bottom">
+                <img src="images/teams/CAFeira.png" alt="Imagem 1">
+                <p>vs</p>
+                <img src="images/teams/Benfica.png" alt="Imagem 2">
+              </div>
+              <div class="abrev">
+                <p>CAF</p>
+                <p>BEN</p>
+              </div>
+            </div>
+            <div class="faixa-right"></div>
+            <div class="right">
+              <img src="images/games/CAFeira_Benfica.png" alt="Imagem 3">
+              <div class="overlay">
+                <p class="text-top">Pavilhão Municipal da Lavandeira</p>
+                <h2 class="text-bottom">27 JAN 2024</h2>
+              </div>
+            </div>
+        </div>
+    </div> 
+    <div class="ano" style="margin-top: -30px;">
+      <div class="row-year">
+        <h1>2023</h1>
+        <div class="see-all-box" onclick="redirectTo('2023hoquei.html')">
+          <p>See all (2) ></p>
+        </div>
+      </div>
+      <div class="ticket" style="margin-top: 80px;" onclick="redirectTo('2023hoquei.html')">
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(231, 189, 0);">
+          <div class="top">
+            <p>TAÇA DE PORTUGAL HOQUEI PATINS</p>
+            <h2>2 - 6</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/HACambra.png" alt="Imagem 1">
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2">
+          </div>
+          <div class="abrev">
+            <p>HAC</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/HACambra_Benfica.png" alt="Imagem 3">
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Vale de Cambra</p>
+            <h2 class="text-bottom">14 JAN 2023</h2>
+          </div>
+        </div>
+      </div>
+      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2023hoquei.html')">
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5);">
+          <div class="top">
+            <p>WSE CHAMPIONS LEAGUE</p>
+            <h2>2 - 5</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/Oliveirense.png" alt="Imagem 1">
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2">
+          </div>
+          <div class="abrev">
+            <p>OLI</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Oliveirense_Benfica_Hoquei.png" alt="Imagem 3">
+          <div class="overlay">
+            <p class="text-top">Pavilhão Dr. Salvador Machado</p>
+            <h2 class="text-bottom">23 FEB 2023</h2>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="ano" style="margin-top: 58px;">
+      <div class="row-year">
+        <h1>2019</h1>
+      </div>
+      <div class="ticket">
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55);">
+          <div class="top">
+            <p>TAÇA DE PORTUGAL HOQUEI PATINS</p>
+            <h2>1 - 12</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/nucleo_sportinguista_it.gif" alt="Imagem 1">
+            <p>vs</p>
+            <img src="images/teams/BIR.png" alt="Imagem 2">
+          </div>
+          <div class="abrev">
+            <p>NSIT</p>
+            <p>BIR</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/NSIT_BIR.png" alt="Imagem 3">
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">06 JAN 2019</h2>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="ano" style="margin-top: -30px;">
+      <div class="row-year">
+        <h1>2017</h1>
+        <div class="see-all-box" onclick="redirectTo('2017hoquei.html')">
+          <p>See all (3) ></p>
+        </div>
+      </div>
+      <div class="ticket" style="margin-top: 140px;" onclick="redirectTo('2017hoquei.html')">
+          <div class="faixa-left"></div>
+          <div class="left" style="background-color: rgb(19, 138, 55);">
+            <div class="top">
+              <p>III DIVISÃO HÓQUEI EM PATINS</p>
+              <h2>4 - 7</h2>
+            </div>
+            <div class="bottom">
+              <img src="images/teams/nucleo_sportinguista_it.gif" alt="Imagem 1">
+              <p>vs</p>
+              <img src="images/teams/InfanteSagres.png" alt="Imagem 2">
+            </div>
+            <div class="abrev">
+              <p>NSIT</p>
+              <p>CIS</p>
+            </div>
+          </div>
+          <div class="faixa-right"></div>
+          <div class="right">
+            <img src="" alt="Imagem 3">
+            <div class="overlay">
+              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+              <h2 class="text-bottom">12 FEB 2017</h2>
+            </div>
+          </div>
+      </div>
+      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2017hoquei.html')">
+          <div class="faixa-left"></div>
+          <div class="left" style="background-color: rgb(19, 138, 55);">
+            <div class="top">
+              <p>III DIVISÃO HÓQUEI EM PATINS</p>
+              <h2>1 - 5</h2>
+            </div>
+            <div class="bottom">
+              <img src="images/teams/nucleo_sportinguista_it.gif" alt="Imagem 1">
+              <p>vs</p>
+              <img src="images/teams/CA_Feira.png" alt="Imagem 2">
+            </div>
+            <div class="abrev">
+              <p>NSIT</p>
+              <p>CAF</p>
+            </div>
+          </div>
+          <div class="faixa-right"></div>
+          <div class="right">
+            <img src="" alt="Imagem 3">
+            <div class="overlay">
+              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+              <h2 class="text-bottom">26 FEB 2017</h2>
+            </div>
+          </div>
+      </div>
+      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2017hoquei.html')">
+          <div class="faixa-left"></div>
+          <div class="left" style="background-color: rgb(19, 138, 55);">
+            <div class="top">
+              <p>III DIVISÃO HÓQUEI EM PATINS</p>
+              <h2>4 - 7</h2>
+            </div>
+            <div class="bottom">
+              <img src="images/teams/nucleo_sportinguista_it.gif" alt="Imagem 1">
+              <p>vs</p>
+              <img src="images/teams/Cucujaes.png" alt="Imagem 2">
+            </div>
+            <div class="abrev">
+              <p>NSIT</p>
+              <p>CUC</p>
+            </div>
+          </div>
+          <div class="faixa-right"></div>
+          <div class="right">
+            <img src="" alt="Imagem 3">
+            <div class="overlay">
+              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+              <h2 class="text-bottom">12 MAR 2017</h2>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <div class="ano" style="margin-top: 120px;">
+      <div class="row-year">
+        <h1>2016</h1>
+      </div>
+      <div class="ticket">
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55);">
+          <div class="top">
+            <p>TAÇA DE PORTUGAL</p>
+            <h2>3 - 3</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/nucleo_sportinguista_it.gif" alt="Imagem 1">
+            <p>vs</p>
+            <img src="images/teams/BomSucesso.png" alt="Imagem 2">
+          </div>
+          <div class="abrev">
+            <p>NSIT</p>
+            <p>BSU</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/NSIT_BomSucesso.png" alt="Imagem 3">
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">26 NOV 2016</h2>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <script src="script.js"></script>
+    <script src="redirectTo.js"></script>
+</body>
+</html>
