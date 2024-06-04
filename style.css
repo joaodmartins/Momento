@@ -36,8 +36,8 @@ body{
     display: inline-block;
     width: 150px;
     height: 95px;
-    margin-right: 10px; /* Adiciona um espaço entre as imagens */
-    align-content: center;
+    margin-right: 10px;
+    align-items: center;
     border-radius: 45px;
 }
 
@@ -54,7 +54,6 @@ body{
 .img-container img{
     margin-top: 15px;
     margin-bottom: 10px;
-
     cursor: pointer;
 }
 
