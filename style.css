@@ -61,35 +61,114 @@ body{
 .icon-container {
     position: relative;
     display: inline-block;
-    background-color: #383d4b; 
+    background-color: #383d4b;
     height: 120px;
-    width: 120px; 
-    margin-top: -27px; 
-    margin-bottom: -27px; 
-    margin-right: -7px; 
-    border-top-right-radius: 30px; 
+    width: 120px;
+    margin-top: -27px;
+    margin-bottom: -27px;
+    margin-right: -7px;
+    border-top-right-radius: 30px;
     align-content: center;
 }
 
 .icon-container i {
     color: #fff;
-    font-size: 50px;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.icon-container img {
+    color: #fff;
+    height: 65px;
+    width: auto;
+    margin-top: 5px;
     cursor: pointer;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: calc(100% + 5px);
+    top: 100%;
     right: 0;
     background-color: #252525;
     border-radius: 15px;
-    width: 500px;
-    height: 295px;
+    width: 520px;
+    max-height: 295px; /* Define a altura máxima da submenu */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
     z-index: 1;
 }
 
+.subsubmenu {
+    display: none;
+    position: absolute;
+    margin: 0;
+    background-color: #252525;
+    border-radius: 15px;
+    width: 500px;
+    max-height: 100px; /* Define a altura máxima da submenu */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    z-index: 2;
+    top: 0;
+    left: 100%;
+}
+
+/* Estilizando a barra de rolagem para WebKit-based browsers */
+.submenu::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+.subsubmenu::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+.submenu::-webkit-scrollbar-track {
+    background: #252525; /* Cor do track da barra de rolagem */
+    border-radius: 10px;
+}
+
+.subsubmenu::-webkit-scrollbar-track {
+    background: #252525; /* Cor do track da barra de rolagem */
+    border-radius: 10px;
+}
+
+.submenu::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b; /* Cor do thumb da barra de rolagem */
+    border-radius: 10px;
+    border: 2px solid #252525; /* Adiciona um espaço entre o thumb e o track */
+}
+
+.subsubmenu::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b; /* Cor do thumb da barra de rolagem */
+    border-radius: 10px;
+    border: 2px solid #252525; /* Adiciona um espaço entre o thumb e o track */
+}
+
+.submenu::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb ao passar o mouse */
+}
+
+.subsubmenu::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb ao passar o mouse */
+}
+
+/* Estilizando a barra de rolagem para Firefox */
+.submenu {
+    scrollbar-color: #3b3b3b #252525; /* Cor do thumb e do track */
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+}
+
+.subsubmenu {
+    scrollbar-color: #3b3b3b #252525; /* Cor do thumb e do track */
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+}
+
 .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subsubmenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -105,8 +184,22 @@ body{
     cursor: pointer;
 }
 
+.subsubmenu ul li {
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none; /* Removendo sublinhado padrão */
+    clear: both;
+    height: 95px;
+    align-content: center;
+    cursor: pointer;
+}
+
 .submenu ul li:hover {
-    background-color: #3b3b3b;;
+    background-color: #3b3b3b;
+}
+
+.subsubmenu ul li:hover {
+    background-color: #3b3b3b;
 }
 
 .submenu ul li a {
@@ -118,10 +211,41 @@ body{
     margin-left: 25px;
 }
 
-.submenu ul li i{
+.subsubmenu ul li a {
+    position: relative;
+    color: #fff; /* Definindo a cor do texto */
+    text-decoration: none; /* Removendo sublinhado padrão */
+    float: left;
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.submenu ul li i {
     position: relative;
     float: left;
     margin-left: 25px;
+}
+
+.subsubmenu ul li i {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+}
+
+.submenu ul li img {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    height: 45px;
+    width: auto;
+}
+
+.subsubmenu ul li img {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    height: 50px;
+    width: auto;
 }
 
 .submenu ul li i.fa-check {
@@ -130,8 +254,23 @@ body{
     float: right;
 }
 
+.subsubmenu ul li i.fa-check {
+    margin-right: 25px;
+    position: relative;
+    float: right;
+}
+
 .icon-container:hover .submenu {
     display: block;
+}
+
+.submenu ul li:hover .subsubmenu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .row {

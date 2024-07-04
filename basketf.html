@@ -33,16 +33,25 @@
             </div>
             <div class="icon-container">
                 <i class="fa fa-venus" aria-hidden="true" ></i>
-                <div class="submenu">
-                    <ul>
-                        <li style="border-top-left-radius: 15px; border-top-right-radius: 15px;" onclick="redirectTo('basket.html')">
+                <div class="submenu" style="max-height: 495px;">
+                    <ul class="dropdown-menu">
+                        <li onclick="redirectTo('basket.html')">
                             <a href="basket.html">ALL</a>
                         </li>
                         <li onclick="redirectTo('basketm.html')">
-                            <i class="fa fa-mars" aria-hidden="true" ></i><a href="basketm.html">Masculino</a>
+                            <i class="fa fa-mars" aria-hidden="true" style="margin-left: 27px;"></i><a href="basketm.html" >Masculino</a>
                         </li>
-                        <li style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" onclick="redirectTo('basketf.html')">
-                            <i class="fa fa-venus" aria-hidden="true" style="color: #0c8bff;"></i><a href="basketf.html" style="margin-left: 31px; color: #0c8bff;">Feminino</a><i class="fa fa-check" aria-hidden="true" style="color: #0c8bff;"></i>
+                        <li  onclick="redirectTo('basketf.html')">
+                            <i class="fa fa-venus" aria-hidden="true" style="margin-left: 33px; color: #0c8bff;"></i><a href="basketf.html" style="margin-left: 26px; color: #0c8bff;">Feminino</a><i class="fa fa-check" aria-hidden="true" style="color: #0c8bff;"></i>
+                        </li>
+                        <li onclick="redirectTo('ligaBasket.html')">
+                            <img src="images/others/ligaBasquetebol.png" alt=""><a href="ligaBasket.html" style="margin-left: 26px;">Liga Betclic Basket</a>
+                        </li>
+                        <li onclick="redirectTo('ligaBasketf.html')">
+                            <img src="images/others/ligaBasquetebolf.png" alt=""><a href="ligaBasketf.html" style="margin-left: 26px;">Liga Betclic Basket Fem.</a>
+                        </li>
+                        <li onclick="redirectTo('tacaFederacaof.html')">
+                            <img src="images/others/tacaFederacao.png" alt=""><a href="tacaFederacaof.html" style="margin-left: 26px;">Taça Federação Fem.</a>
                         </li>
                     </ul>
                 </div>
