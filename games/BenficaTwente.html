@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhar Coluna à Direita</title>
+    <style>
+        .ticket {
+            width: 1300px;
+            position: relative;
+            height: 400px;
+            background-color: rgb(25, 26, 38);
+            box-sizing: border-box;
+            font-size: 18px;
+            display: flex;
+            border-radius: 25px;
+            margin: 30px auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+                  
+        .left {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+                  
+        .right {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+                  
+        .left .top {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+                
+        .left .top p{
+            color: #fff;
+            margin-top: 35px;
+        }
+                
+        .left .top h2{
+            margin-top: 2px;
+            font-size: 155px;
+            color: #fff;
+        }
+                  
+        .left .bottom {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -115px;
+        }
+                  
+        .left .bottom img {
+            height: 70px;
+            width: auto;
+        }
+                
+        .left .bottom p {
+            width: 40%; /* Definindo a largura do texto */
+            text-align: center; /* Centralizando o texto */
+            color: #fff;
+        }
+                
+        .left .top p:nth-of-type(2) {
+            margin-top: -38px; /* Adiciona margem superior para posicionar o segundo p mais acima */
+            margin-bottom: 11px;
+        }
+                
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            object-position: top;
+            filter: brightness(50%);
+        }
+                
+        .overlay {
+            position: absolute; /* Posicionamento absoluto */
+            top: 0;
+            right: 0;
+            width: 60%; /* Defina a largura desejada */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px; /* Espaçamento interno */
+            box-sizing: border-box;
+        }
+                  
+        .text-top,
+        .text-bottom {
+            color: white; /* Cor do texto */
+            font-size: 18px; /* Tamanho da fonte */
+            font-weight: bold; /* Negrito */
+            text-align: right; /* Alinhamento à direita */
+            line-height: 1.1;
+        }
+                  
+        .text-top {
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+                  
+        .text-bottom {
+            font-size: 120px;
+            margin-top: 10px;
+        }
+                          
+        .left .abrev {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+                
+        .left .abrev p:first-child{
+            color: #fff;
+            margin-right: 95px;
+        }
+                
+        .left .abrev p:last-child{
+            color: #fff;
+            margin-left: 102px;
+        }
+                
+                
+        .faixa-left{
+            width: 25px;
+            background-color: #fff;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+                
+        .faixa-right{
+            width: 25px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column:last-child {
+            text-align: right;
+        }
+
+        /* Estilos para a seção principal */
+        .main-section {
+            padding: 20px;
+            margin: 0 20px; /* Margem para separar das laterais */
+            position: relative; /* Define o posicionamento relativo */
+            display: grid;
+            grid-template-rows: auto 1fr; /* Define duas linhas, uma para a caixa e outra para as colunas */
+            width: 1200px;
+        }
+
+        /* Estilos para a caixa com imagem de fundo */
+        .background-box {
+            background-image: url('caminho_para_imagem.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid black;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para as colunas */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Estilos para a caixa */
+        .box {
+            width: calc(50% - 10px); /* 50% do espaço disponível menos a margem entre as colunas */
+            height: 150px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Estilos para a lista de nomes */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+            margin-right: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra mais clara para o círculo */
+        }
+        .map {
+            margin-top: 600px;
+        }
+
+        iframe {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5);">
+          <div class="top">
+            <p>CHAMPIONS LEAGUE</p>
+            <h2>3 - 1</h2>
+          </div>
+          <div class="bottom">
+            <img src="C:/Users/Utilizador/Desktop/Momento/images/teams/Benfica.png" alt="Imagem 1">
+            <p>vs</p>
+            <img src="C:/Users/Utilizador/Desktop/Momento/images/teams/Twente.png" alt="Imagem 2">
+          </div>
+          <div class="abrev">
+            <p>BEN</p>
+            <p>TWE</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="C:/Users/Utilizador/Desktop/Momento/images/games/Benfica_Twente.png" alt="Imagem 3">
+          <div class="overlay">
+            <p class="text-top">Estádio do Sport Lisboa e Benfica</p>
+            <h2 class="text-bottom">24 AUG 2011</h2>
+          </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="row">
+          <div class="bottom-bar">
+            <!-- Opções para escolher -->
+            <p>GAME SHEET</p>
+            <p>GAME STATS</p>
+            <p>STADIUM</p>
+            <p class="option" data-option="4">PHOTOS</p>
+            <p class="option" data-option="5">VIDEOS</p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="left-columns">
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">99</div>
+                  <div class="text">Vlachodimos</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">3</div>
+                  <div class="text">Grimaldo</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">33</div>
+                  <div class="text">Jardel</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">6</div>
+                  <div class="text">Rúben Dias</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">7</div>
+                  <div class="text">Corchia</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">5</div>
+                  <div class="text">Fejsa</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">22</div>
+                  <div class="text">Samaris</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">11</div>
+                  <div class="text">F. Cervi</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">83</div>
+                  <div class="text">Gedson F.</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">27</div>
+                  <div class="text">Rafa</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">79</div>
+                  <div class="text">João Félix</div>
+                </div>
+              </div>
+            </div>
+            <div class="right-columns">
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">8</div>
+                  <div class="text">L. Jovic</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">4</div>
+                  <div class="text">A. Rebic</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">24</div>
+                  <div class="text">D. da Costa</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">10</div>
+                  <div class="text">F. Kostic</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">5</div>
+                  <div class="text">G. Fernandes</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">17</div>
+                  <div class="text">S. Rode</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">20</div>
+                  <div class="text">M. Hasebe</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">19</div>
+                  <div class="text">D. Abraham</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">13</div>
+                  <div class="text">Hinteregger</div>
+                </div>
+                <div class="circle-container">
+                  <div class="circle">2</div>
+                  <div class="text">E. Ndicka</div>
+                </div>
+              </div>
+              <div class="column-11">
+                <div class="circle-container">
+                  <div class="circle">31</div>
+                  <div class="text">K. Trapp</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Lista à Esquerda -->
+        <div class="row">
+          <div class="column">
+            <ul>
+                <li>1 &nbsp&nbsp&nbspMile Svilar</li>
+                <li>15 &nbspYuri Ribeiro</li>
+                <li>61 &nbspFlorentino Luís</li>
+                <li>21 &nbspPizzi</li>
+                <li>17 &nbspAndrija Zivkovic</li>
+                <li>14 &nbspHaris Seferovic</li>
+                <li>73 Jota</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+                <li>Frederik Ronnow &nbsp&nbsp&nbsp1</li>
+                <li>Jetro Willems &nbsp15</li>
+                <li>Simon Falette &nbsp&nbsp3</li>
+                <li>Jonathan de Guzmán &nbsp&nbsp6</li>
+                <li>Lucas Torró &nbsp16</li>
+                <li>Mijat Gacinovic &nbsp&nbsp11</li>
+                <li>Gonçalo Paciência 39</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678.292728325005!2d-9.184224187440126!3d38.75265886615975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932d5ddc50c71%3A0xf0944b3f8be0881a!2sEst%C3%A1dio%20do%20Sport%20Lisboa%20e%20Benfica!5e0!3m2!1spt-PT!2spt!4v1720810403058!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</body>
+</html>
+
+

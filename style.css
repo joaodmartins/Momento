@@ -92,7 +92,7 @@ body{
     right: 0;
     background-color: #252525;
     border-radius: 15px;
-    width: 520px;
+    width: 534px;
     max-height: 295px; /* Define a altura máxima da submenu */
     overflow-y: auto; /* Adiciona barra de rolagem vertical */
     z-index: 1;
@@ -224,6 +224,7 @@ body{
     position: relative;
     float: left;
     margin-left: 25px;
+    font-size: 51px;
 }
 
 .subsubmenu ul li i {
