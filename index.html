@@ -1,831 +1,1214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>ALL</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="caixa">
-        <div class="sport-row">
-            <div class="img-container" style="background-color: #383d4b; margin-left: 7px;" onclick="redirectTo('index.html')">
-                <p>ALL</p>
-            </div>
-            <div class="img-container" onclick="redirectTo('futebol.html')">
-                <img src="images/others/Futebol.png" alt="">
-            </div>
-            <div class="img-container" onclick="redirectTo('futsal.html')">
-                <img src="images/others/Futsal.png" alt="">
-            </div>
-            <div class="img-container" onclick="redirectTo('basket.html')">
-                <img src="images/others/Basquetebol.png" alt="">
-            </div>
-            <div class="img-container" onclick="redirectTo('hoquei.html')">
-                <img src="images/others/Hoquei.png" alt="">
-            </div>
-            <div class="img-container" onclick="redirectTo('andebol.html')">
-                <img src="images/others/Andebol.png" alt="">
-            </div>
-            <div class="img-container" onclick="redirectTo('volei.html')">
-                <img src="images/others/Voleibol.png" alt="">
-            </div>
-            <div class="icon-container">
-              <i class="fa fa-bars" aria-hidden="true" ></i>
-              <div class="submenu">
-                  <ul>
-                      <li style="border-top-left-radius: 15px; border-top-right-radius: 15px;" onclick="redirectTo('index.html')">
-                          <a href="index.html" style="color: #0c8bff;">ALL</a><i class="fa fa-check" aria-hidden="true" style="color: #0c8bff;"></i>
-                      </li>
-                      <li onclick="redirectTo('allm.html')">
-                          <i class="fa fa-mars" aria-hidden="true" ></i><a href="allm.html">Masculino</a>
-                      </li>
-                      <li style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" onclick="redirectTo('allf.html')">
-                          <i class="fa fa-venus" aria-hidden="true" ></i><a href="allf.html" style="margin-left: 31px;">Feminino</a>
-                      </li>
-                  </ul>
+      <div class="sport-row">
+        <div
+          class="img-container"
+          style="background-color: #383d4b; margin-left: 7px"
+          onclick="redirectTo('index.html')"
+        >
+          <p>ALL</p>
+        </div>
+        <div class="img-container" onclick="redirectTo('futebol.html')">
+          <img src="images/others/Futebol.png" alt="" />
+        </div>
+        <div class="img-container" onclick="redirectTo('futsal.html')">
+          <img src="images/others/Futsal.png" alt="" />
+        </div>
+        <div class="img-container" onclick="redirectTo('basket.html')">
+          <img src="images/others/Basquetebol.png" alt="" />
+        </div>
+        <div class="img-container" onclick="redirectTo('hoquei.html')">
+          <img src="images/others/Hoquei.png" alt="" />
+        </div>
+        <div class="img-container" onclick="redirectTo('andebol.html')">
+          <img src="images/others/Andebol.png" alt="" />
+        </div>
+        <div class="img-container" onclick="redirectTo('volei.html')">
+          <img src="images/others/Voleibol.png" alt="" />
+        </div>
+        <div class="icon-container">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <div class="submenu">
+            <ul>
+              <li
+                style="
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                "
+                onclick="redirectTo('index.html')"
+              >
+                <a href="index.html" style="color: #0c8bff">ALL</a
+                ><i
+                  class="fa fa-check"
+                  aria-hidden="true"
+                  style="color: #0c8bff"
+                ></i>
+              </li>
+              <li onclick="redirectTo('allm.html')">
+                <i class="fa fa-mars" aria-hidden="true"></i
+                ><a href="allm.html">Masculino</a>
+              </li>
+              <li
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                "
+                onclick="redirectTo('allf.html')"
+              >
+                <i class="fa fa-venus" aria-hidden="true"></i
+                ><a href="allf.html" style="margin-left: 31px">Feminino</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box-row">
+          <p>Games</p>
+          <p>51</p>
+        </div>
+        <div class="box-row">
+          <p>Venues</p>
+          <p>24</p>
+        </div>
+        <div class="box-row">
+          <p>Teams</p>
+          <p>67</p>
+        </div>
+        <div class="box-row">
+          <p>Sports</p>
+          <p>6</p>
+        </div>
+        <div class="box-row">
+          <p>Hrs:Mins</p>
+          <p>58:30</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="carrousel">
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavAngra.jpg');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Municipal<br />de Angra do Heroísmo
               </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="box-row">
-            <p>Games</p>
-            <p>51</p>
-          </div>
-          <div class="box-row">
-            <p>Venues</p>
-            <p>24</p>
-          </div>
-          <div class="box-row">
-            <p>Teams</p>
-            <p>67</p>
-          </div>
-          <div class="box-row">
-            <p>Sports</p>
-            <p>6</p>
-          </div>
-          <div class="box-row">
-            <p>Hrs:Mins</p>
-            <p>58:30</p>
-          </div>
-        </div>
-        <div class="wrapper">
-            <div class="carrousel">
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavAngra.jpg');">
-                        <div class="text-top-left">Pavilhão Municipal<br>de Angra do Heroísmo</div>
-                        <div class="times-box">
-                          <div class="text-top-right">7x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Angra do Heroísmo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/Benfica.png');">
-                        <div class="text-top-left">Estádio do Sport<br>Lisboa e Benfica</div>
-                        <div class="times-box">
-                          <div class="text-top-right">6x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Lisboa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/Aveiro.png');">
-                        <div class="text-top-left">Estádio Municipal<br>de Aveiro</div>
-                        <div class="times-box">
-                          <div class="text-top-right">5x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Aveiro</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioMarcolinodeCastro.png');">
-                        <div class="text-top-left">Estádio Marcolino<br>de Castro</div>
-                        <div class="times-box">
-                          <div class="text-top-right">3x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Santa Maria da Feira</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavDrSalvadorMachado.png');">
-                      <div class="text-top-left">Pavilhão Dr.<br>Salvador Machado</div>
-                      <div class="times-box">
-                        <div class="text-top-right">3x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Oliveira de Azeméis</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioCarlosOsorio.png');">
-                        <div class="text-top-left">Estádio Carlos<br>Osório</div>
-                        <div class="times-box">
-                          <div class="text-top-right">3x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Oliveira de Azeméis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioJoaoPauloII.png');">
-                      <div class="text-top-left">Estádio João<br>Paulo II</div>
-                      <div class="times-box">
-                        <div class="text-top-right">3x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Angra do Heroísmo</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/CaixaUA.png');">
-                      <div class="text-top-left">Nave Multiusos<br>Caixa UA</div>
-                      <div class="times-box">
-                        <div class="text-top-right">3x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Aveiro</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioAntonioAugustoMartinsPereira.png');">
-                        <div class="text-top-left">Estádio Municipal<br>António Augusto<br>Martins Pereira</div>
-                        <div class="times-box">
-                          <div class="text-top-right">2x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Albergaria-a-Velha</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavEsgueira.png');">
-                      <div class="text-top-left">Pavilhão<br>Gimnodesportivo<br>de Esgueira</div>
-                      <div class="times-box">
-                        <div class="text-top-right">2x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Esgueira</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/allianz_stadion.png');">
-                        <div class="text-top-left">Allianz Stadion</div>
-                        <div class="times-box">
-                          <div class="text-top-right">1x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraAustria.png" alt="">
-                          <p>Wien</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioAVS.png');">
-                        <div class="text-top-left">Estádio Clube<br>Desportivo das Aves</div>
-                        <div class="times-box">
-                          <div class="text-top-right">1x</div>
-                        </div>
-                        <div class="text-bottom-left">
-                          <img src="images/others/BandeiraPortugal.png" alt="">
-                          <p>Vila das Aves</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstádioMunicipalBraga.png');">
-                      <div class="text-top-left">Estádio Municipal<br>de Braga</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Braga</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstádioFutebolClubeVizela.png');">
-                      <div class="text-top-left">Estádio Futebol<br>Clube de Vizela</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Vizela</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstádioMunicipalArouca.png');">
-                      <div class="text-top-left">Estádio Municipal<br>de Arouca</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Arouca</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/EstadioBessa.png');">
-                      <div class="text-top-left">Estádio do Bessa<br>Século XXI</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Porto</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/ArenaOvar.png');">
-                      <div class="text-top-left">Arena de Ovar</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Ovar</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavilhaoAristidesHall.png');">
-                      <div class="text-top-left">Pavilhão Aristides<br>Hall</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Aveiro</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavLavandeira.png');">
-                      <div class="text-top-left">Pavilhão Municipal<br>da Lavandeira</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Santa Maria da Feira</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavAngeja.png');">
-                      <div class="text-top-left">Pavilhão<br>Polidesportivo<br>de Angeja</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Angeja</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavEsmoriz.png');">
-                      <div class="text-top-left">Pavilhão Esmoriz<br>Ginásio Clube</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Esmoriz</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavGalitos.png');">
-                      <div class="text-top-left">Pavilhão dos Galitos</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Aveiro</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavTravessas.png');">
-                      <div class="text-top-left">Pavilhão Municipal<br>das Travessas</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>São João da Madeira</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Estadios/PavValeCambra.png');">
-                      <div class="text-top-left">Pavilhão Municipal<br>de Vale de Cambra</div>
-                      <div class="times-box">
-                        <div class="text-top-right">1x</div>
-                      </div>
-                      <div class="text-bottom-left">
-                        <img src="images/others/BandeiraPortugal.png" alt="">
-                        <p>Vale de Cambra</p>
-                      </div>
-                  </div>
-                </div>
+              <div class="times-box">
+                <div class="text-top-right">7x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Angra do Heroísmo</p>
+              </div>
             </div>
-        </div>
-        <div class="wrapper-teams">
-            <div class="carrousel-teams">
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>7x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/nucleo_sportinguista_it.png" alt="img" draggable="false">
-                    <p>6x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>5x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>5x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>3x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>3x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Feirense.png" alt="img" draggable="false">
-                    <p>3x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Oliveirense.png" alt="img" draggable="false">
-                    <p>3x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Braga.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Braga.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/ClubeAlbergaria.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Lusitania.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Oliveirense.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Portugal.png" alt="img" draggable="false">
-                    <p>2x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Benfica.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Academica.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/ACMilan.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/ADSanjoanense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Alavarium.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/ALBA.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Angrense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Arouca.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/AVS.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/AZ.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Barbarense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Barcelos.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Bayern.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/BeiraMar.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/BIR.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Boavista.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/BomSucesso.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Covilha.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/HACambra.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Cucujaes.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/DinamoSanjoanense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Esgueira.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Esmoriz.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Estarreja.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/CAFeira.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/CAFeira.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Frankfurt.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Galitos.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/GDESSA.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Grecia.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Imortal.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/InfanteSagres.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Mealhada.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/CPNatacao.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/PacosFerreira.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Oliveirense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Ovarense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Porco.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Portimonense.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/QuintaLombos.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/RapidWien.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/RioAve.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Salzburg.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Servia.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Lagartos.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Toulouse.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Twente.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/UniaoSportiva.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
-                <div class="item">
-                    <img src="images/teams/Vizela.png" alt="img" draggable="false">
-                    <p>1x</p>
-                </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/Benfica.png');
+              "
+            >
+              <div class="text-top-left">
+                Estádio do Sport<br />Lisboa e Benfica
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">6x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Lisboa</p>
+              </div>
             </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/Aveiro.png');
+              "
+            >
+              <div class="text-top-left">Estádio Municipal<br />de Aveiro</div>
+              <div class="times-box">
+                <div class="text-top-right">5x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Aveiro</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioMarcolinodeCastro.png');
+              "
+            >
+              <div class="text-top-left">Estádio Marcolino<br />de Castro</div>
+              <div class="times-box">
+                <div class="text-top-right">3x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Santa Maria da Feira</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavDrSalvadorMachado.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Dr.<br />Salvador Machado
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">3x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Oliveira de Azeméis</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioCarlosOsorio.png');
+              "
+            >
+              <div class="text-top-left">Estádio Carlos<br />Osório</div>
+              <div class="times-box">
+                <div class="text-top-right">3x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Oliveira de Azeméis</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioJoaoPauloII.png');
+              "
+            >
+              <div class="text-top-left">Estádio João<br />Paulo II</div>
+              <div class="times-box">
+                <div class="text-top-right">3x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Angra do Heroísmo</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/CaixaUA.png');
+              "
+            >
+              <div class="text-top-left">Nave Multiusos<br />Caixa UA</div>
+              <div class="times-box">
+                <div class="text-top-right">3x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Aveiro</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioAntonioAugustoMartinsPereira.png');
+              "
+            >
+              <div class="text-top-left">
+                Estádio Municipal<br />António Augusto<br />Martins Pereira
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">2x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Albergaria-a-Velha</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavEsgueira.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão<br />Gimnodesportivo<br />de Esgueira
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">2x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Esgueira</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/allianz_stadion.png');
+              "
+            >
+              <div class="text-top-left">Allianz Stadion</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraAustria.png" alt="" />
+                <p>Wien</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioAVS.png');
+              "
+            >
+              <div class="text-top-left">
+                Estádio Clube<br />Desportivo das Aves
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Vila das Aves</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstádioMunicipalBraga.png');
+              "
+            >
+              <div class="text-top-left">Estádio Municipal<br />de Braga</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Braga</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstádioFutebolClubeVizela.png');
+              "
+            >
+              <div class="text-top-left">
+                Estádio Futebol<br />Clube de Vizela
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Vizela</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstádioMunicipalArouca.png');
+              "
+            >
+              <div class="text-top-left">Estádio Municipal<br />de Arouca</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Arouca</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/EstadioBessa.png');
+              "
+            >
+              <div class="text-top-left">Estádio do Bessa<br />Século XXI</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Porto</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/ArenaOvar.png');
+              "
+            >
+              <div class="text-top-left">Arena de Ovar</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Ovar</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavN2Luz.png');
+              "
+            >
+              <div class="text-top-left">Pavilhão nº 2 da Luz</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Lisboa</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavilhaoAristidesHall.png');
+              "
+            >
+              <div class="text-top-left">Pavilhão Aristides<br />Hall</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Aveiro</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavLavandeira.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Municipal<br />da Lavandeira
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Santa Maria da Feira</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavAngeja.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão<br />Polidesportivo<br />de Angeja
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Angeja</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavEsmoriz.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Esmoriz<br />Ginásio Clube
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Esmoriz</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavGalitos.png');
+              "
+            >
+              <div class="text-top-left">Pavilhão dos Galitos</div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Aveiro</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavTravessas.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Municipal<br />das Travessas
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>São João da Madeira</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="box"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url('images/Estadios/PavValeCambra.png');
+              "
+            >
+              <div class="text-top-left">
+                Pavilhão Municipal<br />de Vale de Cambra
+              </div>
+              <div class="times-box">
+                <div class="text-top-right">1x</div>
+              </div>
+              <div class="text-bottom-left">
+                <img src="images/others/BandeiraPortugal.png" alt="" />
+                <p>Vale de Cambra</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="wrapper-teams">
+        <div class="carrousel-teams">
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>9x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>6x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>5x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>5x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>3x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>3x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Feirense.png" alt="img" draggable="false" />
+            <p>3x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/Oliveirense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>3x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/Oliveirense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>3x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Braga.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Braga.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/ClubeAlbergaria.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Lusitania.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Ovarense.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Portugal.png" alt="img" draggable="false" />
+            <p>2x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Benfica.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Academica.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/ACMilan.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/ADSanjoanense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Alavarium.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/ALBA.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Angrense.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Arouca.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/AVS.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/AZ.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/Barbarense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Barcelos.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Bayern.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/BeiraMar.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/BIR.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Boavista.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Bolonha.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/BomSucesso.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Covilha.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/HACambra.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Cucujaes.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/DinamoSanjoanense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Esgueira.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Esmoriz.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Estarreja.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/CAFeira.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/CAFeira.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Feyenoord.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Frankfurt.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Galitos.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/GDESSA.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Grecia.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Imortal.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/InfanteSagres.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Mealhada.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/CPNatacao.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/PacosFerreira.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/Oliveirense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Porco.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/Portimonense.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/QuintaLombos.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/RapidWien.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/RioAve.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Salzburg.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Servia.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Lagartos.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Thetis.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Toulouse.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Twente.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img
+              src="images/teams/UniaoSportiva.png"
+              alt="img"
+              draggable="false"
+            />
+            <p>1x</p>
+          </div>
+          <div class="item">
+            <img src="images/teams/Vizela.png" alt="img" draggable="false" />
+            <p>1x</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="ano" style="margin-top: -80px;">
-        <div class="row-year">
-          <h1>2024</h1>
-          <div class="see-all-box" onclick="redirectTo('2024.html')">
-            <p>See all (21) ></p>
+    <div class="ano" style="margin-top: -80px">
+      <div class="row-year">
+        <h1>2024</h1>
+        <div class="see-all-box" onclick="redirectTo('2024.html')">
+          <p>See all (24) ></p>
+        </div>
+      </div>
+      <div
+        class="ticket"
+        style="margin-top: 140px"
+        onclick="redirectTo('2024.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5)">
+          <div class="top">
+            <p>CHALLENGE CUP WOMEN</p>
+            <h2>3 - 1</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Thetis.png" alt="Imagem 2" />
+          </div>
+          <div class="abrev">
+            <p>BEN</p>
+            <p>THE</p>
           </div>
         </div>
-        <div class="ticket" style="margin-top: 140px;" onclick="redirectTo('2024.html')">
-            <div class="faixa-left"></div>
-            <div class="left" style="background-color: rgb(29, 29, 29);">
-              <div class="top">
-                <p>TAÇA VITOR HUGO FEM.</p>
-                <h2 style="font-size: 120px; margin-top: 15px;">48 - 38</h2>
-              </div>
-              <div class="bottom" style="margin-top: -65px;">
-                <img src="images/teams/ADSanjoanense.png" alt="Imagem 1">
-                <p>vs</p>
-                <img src="images/teams/Barcelos.png" alt="Imagem 2">
-              </div>
-              <div class="abrev">
-                <p>ADS</p>
-                <p>BCB</p>
-              </div>
-            </div>
-            <div class="faixa-right"></div>
-            <div class="right">
-              <img src="images/games/Sanjoanense_Barcelos.png" alt="Imagem 3">
-              <div class="overlay">
-                <p class="text-top">Nave Multiusos Caixa UA</p>
-                <h2 class="text-bottom">21 SEP 2024</h2>
-              </div>
-            </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Benfica_Thetis.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão nº 2 da Luz</p>
+            <h2 class="text-bottom">11 DEC 2024</h2>
+          </div>
         </div>
-        <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2024.html')">
-            <div class="faixa-left"></div>
-            <div class="left" style="background-color: rgb(147, 5, 5);">
-              <div class="top">
-                <p>TAÇA VITOR HUGO FEM.</p>
-                <h2 style="font-size: 120px;">46 - 42</h2>
-              </div>
-              <div class="bottom" style="margin-top: -55px;">
-                <img src="images/teams/Benfica.png" alt="Imagem 1">
-                <p>vs</p>
-                <img src="images/teams/UniaoSportiva.png" alt="Imagem 2">
-              </div>
-              <div class="abrev">
-                <p>BEN</p>
-                <p>UNI</p>
-              </div>
-            </div>
-            <div class="faixa-right"></div>
-            <div class="right">
-              <img src="images/games/Benfica_UniaoSportiva.png" alt="Imagem 3">
-              <div class="overlay">
-                <p class="text-top">Nave Multiusos Caixa UA</p>
-                <h2 class="text-bottom">21 SEP 2024</h2>
-              </div>
-            </div>
+      </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2024.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5)">
+          <div class="top">
+            <p>CHAMPIONS LEAGUE</p>
+            <h2>0 - 0</h2>
+          </div>
+          <div class="bottom">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Bolonha.png" alt="Imagem 2" />
+          </div>
+          <div class="abrev">
+            <p>BEN</p>
+            <p>BOL</p>
+          </div>
         </div>
-        <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2024.html')">
-            <div class="faixa-left"></div>
-            <div class="left" style="background-color: rgb(147, 5, 5);">
-              <div class="top">
-                <p>TAÇA VITOR HUGO FEM.</p>
-                <h2 style="font-size: 120px;">86 - 56</h2>
-              </div>
-              <div class="bottom" style="margin-top: -55px;">
-                <img src="images/teams/Benfica.png" alt="Imagem 1">
-                <p>vs</p>
-                <img src="images/teams/Imortal.png" alt="Imagem 2">
-              </div>
-              <div class="abrev">
-                <p>BEN</p>
-                <p>IMO</p>
-              </div>
-            </div>
-            <div class="faixa-right"></div>
-            <div class="right">
-              <img src="images/games/Benfica_Imortal.png" alt="Imagem 3">
-              <div class="overlay">
-                <p class="text-top">Nave Multiusos Caixa UA</p>
-                <h2 class="text-bottom">22 SEP 2024</h2>
-              </div>
-            </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Benfica_Bologna.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Estádio da Luz</p>
+            <h2 class="text-bottom">11 DEC 2024</h2>
+          </div>
         </div>
+      </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2024.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5)">
+          <div class="top">
+            <p>LIGA BETCLIC BASQUETEBOL</p>
+            <h2 style="font-size: 120px">80 - 79</h2>
+          </div>
+          <div class="bottom" style="margin-top: -55px">
+            <img src="images/teams/Oliveirense.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Ovarense.png" alt="Imagem 2" />
+          </div>
+          <div class="abrev">
+            <p>OLI</p>
+            <p>OVA</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Oliveirense_Ovarense.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão Dr. Salvador Machado</p>
+            <h2 class="text-bottom">14 DEC 2024</h2>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="ano" style="margin-top: 120px;">
+    <div class="ano" style="margin-top: 120px">
       <div class="row-year">
         <h1>2023</h1>
         <div class="see-all-box" onclick="redirectTo('2023.html')">
           <p>See all (16) ></p>
         </div>
       </div>
-      <div class="ticket" style="margin-top: 140px;" onclick="redirectTo('2023.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(29, 29, 29);">
-            <div class="top">
-              <p>LIGA BETCLIC BASQUETEBOL FEMININO</p>
-              <h2 style="font-size: 120px;">62 - 85</h2>
-            </div>
-            <div class="bottom" style="margin-top: -55px;">
-              <img src="images/teams/Galitos.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/Benfica.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>GAL</p>
-              <p>BEN</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: 140px"
+        onclick="redirectTo('2023.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(29, 29, 29)">
+          <div class="top">
+            <p>LIGA BETCLIC BASQUETEBOL FEMININO</p>
+            <h2 style="font-size: 120px">62 - 85</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/Galitos_Benfica.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Pavilhão dos Galitos</p>
-              <h2 class="text-bottom">26 NOV 2023</h2>
-            </div>
+          <div class="bottom" style="margin-top: -55px">
+            <img src="images/teams/Galitos.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>GAL</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Galitos_Benfica.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão dos Galitos</p>
+            <h2 class="text-bottom">26 NOV 2023</h2>
+          </div>
+        </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2023.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(147, 5, 5);">
-            <div class="top">
-              <p>LIGA PORTUGAL 2</p>
-              <h2>1 - 0</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/AVS.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/Benfica.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>AVS</p>
-              <p>BEN</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2023.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5)">
+          <div class="top">
+            <p>LIGA PORTUGAL 2</p>
+            <h2>1 - 0</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/AVS_BenficaB.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Estádio Clube Desportivo das Aves</p>
-              <h2 class="text-bottom">02 DEC 2023</h2>
-            </div>
+          <div class="bottom">
+            <img src="images/teams/AVS.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>AVS</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/AVS_BenficaB.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Estádio Clube Desportivo das Aves</p>
+            <h2 class="text-bottom">02 DEC 2023</h2>
+          </div>
+        </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2023.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(19, 138, 55);">
-            <div class="top">
-              <p>TAÇA DA LIGA FUTSAL</p>
-              <h2>0 - 8</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/Barbarense.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/Benfica.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>BAR</p>
-              <p>BEN</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2023.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55)">
+          <div class="top">
+            <p>TAÇA DA LIGA FUTSAL</p>
+            <h2>0 - 8</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/Barbarense_Benfica.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
-              <h2 class="text-bottom">29 DEZ 2023</h2>
-            </div>
+          <div class="bottom">
+            <img src="images/teams/Barbarense.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>BAR</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/Barbarense_Benfica.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">29 DEZ 2023</h2>
+          </div>
+        </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: 120px;">
+    </div>
+    <div class="ano" style="margin-top: 120px">
       <div class="row-year">
         <h1>2022</h1>
         <div class="see-all-box" onclick="redirectTo('2022.html')">
           <p>See all (2) ></p>
         </div>
       </div>
-      <div class="ticket" style="margin-top: 80px;" onclick="redirectTo('2022.html')">
+      <div
+        class="ticket"
+        style="margin-top: 80px"
+        onclick="redirectTo('2022.html')"
+      >
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>TAÇA DA LIGA FEMININA</p>
-            <p style="position: relative; top: 195px;">(2-3 g.p.)</p>
+            <p style="position: relative; top: 195px">(2-3 g.p.)</p>
             <h2>0 - 0</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Benfica.png" alt="Imagem 1">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Braga.png" alt="Imagem 2">
+            <img src="images/teams/Braga.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEN</p>
@@ -834,55 +1217,64 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Benfica_Braga_2022.png" alt="Imagem 3">
+          <img src="images/games/Benfica_Braga_2022.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio Marcolino de Castro</p>
             <h2 class="text-bottom">23 MAR 2022</h2>
           </div>
         </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2022.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(147, 5, 5);">
-            <div class="top">
-              <p>CAMPEONATO NACIONAL FEMININO</p>
-              <h2>0 - 4</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/ClubeAlbergaria.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/Benfica.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>CDA</p>
-              <p>BEN</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2022.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(147, 5, 5)">
+          <div class="top">
+            <p>CAMPEONATO NACIONAL FEMININO</p>
+            <h2>0 - 4</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/ClubeAlbergaria_Benfica_2022.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Estádio Municipal António Augusto Martins Pereira</p>
-              <h2 class="text-bottom">17 SEP 2022</h2>
-            </div>
+          <div class="bottom">
+            <img src="images/teams/ClubeAlbergaria.png" alt="Imagem 1" />
+            <p>vs</p>
+            <img src="images/teams/Benfica.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>CDA</p>
+            <p>BEN</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img
+            src="images/games/ClubeAlbergaria_Benfica_2022.png"
+            alt="Imagem 3"
+          />
+          <div class="overlay">
+            <p class="text-top">
+              Estádio Municipal António Augusto Martins Pereira
+            </p>
+            <h2 class="text-bottom">17 SEP 2022</h2>
+          </div>
+        </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: 58px;">
+    </div>
+    <div class="ano" style="margin-top: 58px">
       <div class="row-year">
         <h1>2021</h1>
       </div>
       <div class="ticket">
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>CHAMPIONS LEAGUE</p>
             <h2>0 - 4</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Benfica.png" alt="Imagem 1">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Bayern.png" alt="Imagem 2">
+            <img src="images/teams/Bayern.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEN</p>
@@ -891,32 +1283,39 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Benfica_Bayern.png" alt="Imagem 3">
+          <img src="images/games/Benfica_Bayern.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio do Sport Lisboa e Benfica</p>
             <h2 class="text-bottom">20 OCT 2021</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: -30px;">
+    </div>
+    <div class="ano" style="margin-top: -30px">
       <div class="row-year">
         <h1>2019</h1>
         <div class="see-all-box" onclick="redirectTo('2019.html')">
           <p>See all (2) ></p>
         </div>
       </div>
-      <div class="ticket" style="margin-top: 80px;" onclick="redirectTo('2019.html')">
+      <div
+        class="ticket"
+        style="margin-top: 80px"
+        onclick="redirectTo('2019.html')"
+      >
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(19, 138, 55);">
+        <div class="left" style="background-color: rgb(19, 138, 55)">
           <div class="top">
             <p>TAÇA DE PORTUGAL HOQUEI PATINS</p>
             <h2>1 - 12</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
             <p>vs</p>
-            <img src="images/teams/BIR.png" alt="Imagem 2">
+            <img src="images/teams/BIR.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>NSIT</p>
@@ -925,24 +1324,28 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/NSIT_BIR.png" alt="Imagem 3">
+          <img src="images/games/NSIT_BIR.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
             <h2 class="text-bottom">06 JAN 2019</h2>
           </div>
         </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2019.html')">
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2019.html')"
+      >
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>EUROPA LEAGUE</p>
             <h2>4 - 2</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Benfica.png" alt="Imagem 1">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Frankfurt.png" alt="Imagem 2">
+            <img src="images/teams/Frankfurt.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEN</p>
@@ -951,118 +1354,146 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Benfica_Frankfurt.png" alt="Imagem 3">
+          <img src="images/games/Benfica_Frankfurt.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio do Sport Lisboa e Benfica</p>
             <h2 class="text-bottom">11 APR 2019</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: 58px;">
+    </div>
+    <div class="ano" style="margin-top: 58px">
       <div class="row-year">
         <h1>2017</h1>
         <div class="see-all-box" onclick="redirectTo('2017.html')">
           <p>See all (3) ></p>
         </div>
       </div>
-      <div class="ticket" style="margin-top: 140px;" onclick="redirectTo('2017.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(19, 138, 55);">
-            <div class="top">
-              <p>III DIVISÃO HÓQUEI EM PATINS</p>
-              <h2>4 - 7</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/InfanteSagres.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>NSIT</p>
-              <p>CIS</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: 140px"
+        onclick="redirectTo('2017.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55)">
+          <div class="top">
+            <p>III DIVISÃO HÓQUEI EM PATINS</p>
+            <h2>4 - 7</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
-              <h2 class="text-bottom">12 FEB 2017</h2>
-            </div>
+          <div class="bottom">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
+            <p>vs</p>
+            <img src="images/teams/InfanteSagres.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>NSIT</p>
+            <p>CIS</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">12 FEB 2017</h2>
+          </div>
+        </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2017.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(19, 138, 55);">
-            <div class="top">
-              <p>III DIVISÃO HÓQUEI EM PATINS</p>
-              <h2>1 - 5</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/CA_Feira.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>NSIT</p>
-              <p>CAF</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2017.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55)">
+          <div class="top">
+            <p>III DIVISÃO HÓQUEI EM PATINS</p>
+            <h2>1 - 5</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/NSIT_Feira.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
-              <h2 class="text-bottom">26 FEB 2017</h2>
-            </div>
+          <div class="bottom">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
+            <p>vs</p>
+            <img src="images/teams/CA_Feira.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>NSIT</p>
+            <p>CAF</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/NSIT_Feira.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">26 FEB 2017</h2>
+          </div>
+        </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2017.html')">
-          <div class="faixa-left"></div>
-          <div class="left" style="background-color: rgb(19, 138, 55);">
-            <div class="top">
-              <p>III DIVISÃO HÓQUEI EM PATINS</p>
-              <h2>4 - 7</h2>
-            </div>
-            <div class="bottom">
-              <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
-              <p>vs</p>
-              <img src="images/teams/Cucujaes.png" alt="Imagem 2">
-            </div>
-            <div class="abrev">
-              <p>NSIT</p>
-              <p>CUC</p>
-            </div>
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2017.html')"
+      >
+        <div class="faixa-left"></div>
+        <div class="left" style="background-color: rgb(19, 138, 55)">
+          <div class="top">
+            <p>III DIVISÃO HÓQUEI EM PATINS</p>
+            <h2>4 - 7</h2>
           </div>
-          <div class="faixa-right"></div>
-          <div class="right">
-            <img src="images/games/NSIT_Cucujaes.png" alt="Imagem 3">
-            <div class="overlay">
-              <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
-              <h2 class="text-bottom">12 MAR 2017</h2>
-            </div>
+          <div class="bottom">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
+            <p>vs</p>
+            <img src="images/teams/Cucujaes.png" alt="Imagem 2" />
           </div>
+          <div class="abrev">
+            <p>NSIT</p>
+            <p>CUC</p>
+          </div>
+        </div>
+        <div class="faixa-right"></div>
+        <div class="right">
+          <img src="images/games/NSIT_Cucujaes.png" alt="Imagem 3" />
+          <div class="overlay">
+            <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
+            <h2 class="text-bottom">12 MAR 2017</h2>
+          </div>
+        </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: 120px;">
+    </div>
+    <div class="ano" style="margin-top: 120px">
       <div class="row-year">
         <h1>2016</h1>
         <div class="see-all-box" onclick="redirectTo('2016.html')">
           <p>See all (2) ></p>
         </div>
       </div>
-      <div class="ticket" style="margin-top: 80px;" onclick="redirectTo('2016.html')">
+      <div
+        class="ticket"
+        style="margin-top: 80px"
+        onclick="redirectTo('2016.html')"
+      >
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(19, 138, 55);">
+        <div class="left" style="background-color: rgb(19, 138, 55)">
           <div class="top">
             <p>III DIVISÃO HÓQUEI EM PATINS</p>
             <h2>2 - 9</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
             <p>vs</p>
-            <img src="images/teams/Mealhada.png" alt="Imagem 2">
+            <img src="images/teams/Mealhada.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>NSIT</p>
@@ -1071,24 +1502,31 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/NSIT_Mealhada.png" alt="Imagem 3">
+          <img src="images/games/NSIT_Mealhada.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Pavilhão Municipal de Vale de Cambra</p>
             <h2 class="text-bottom">13 NOV 2023</h2>
           </div>
         </div>
       </div>
-      <div class="ticket" style="margin-top: -490px;" onclick="redirectTo('2016.html')">
+      <div
+        class="ticket"
+        style="margin-top: -490px"
+        onclick="redirectTo('2016.html')"
+      >
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(19, 138, 55);">
+        <div class="left" style="background-color: rgb(19, 138, 55)">
           <div class="top">
             <p>III DIVISÃO HÓQUEI EM PATINS</p>
             <h2>3 - 3</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/nucleo_sportinguista_it.png" alt="Imagem 1">
+            <img
+              src="images/teams/nucleo_sportinguista_it.png"
+              alt="Imagem 1"
+            />
             <p>vs</p>
-            <img src="images/teams/BomSucesso.png" alt="Imagem 2">
+            <img src="images/teams/BomSucesso.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>NSIT</p>
@@ -1097,29 +1535,29 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/NSIT_BomSucesso.png" alt="Imagem 3">
+          <img src="images/games/NSIT_BomSucesso.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Pavilhão Municipal de Angra do Heroísmo</p>
             <h2 class="text-bottom">26 NOV 2016</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: 58px;">
+    </div>
+    <div class="ano" style="margin-top: 58px">
       <div class="row-year">
         <h1>2015</h1>
       </div>
       <div class="ticket">
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>TAÇA DE PORTUGAL</p>
             <h2>0 - 2</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Angrense.png" alt="Imagem 1">
+            <img src="images/teams/Angrense.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Porco.png" alt="Imagem 2">
+            <img src="images/teams/Porco.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>ANG</p>
@@ -1128,29 +1566,29 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Angrense_Porco.png" alt="Imagem 3">
+          <img src="images/games/Angrense_Porco.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio João Paulo II</p>
             <h2 class="text-bottom">21 NOV 2015</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: -30px;">
+    </div>
+    <div class="ano" style="margin-top: -30px">
       <div class="row-year">
         <h1>2014</h1>
       </div>
       <div class="ticket">
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>EUROPA LEAGUE</p>
             <h2>2 - 0</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Benfica.png" alt="Imagem 1">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/AZ.png" alt="Imagem 2">
+            <img src="images/teams/AZ.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEN</p>
@@ -1159,29 +1597,29 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Benfica_AZAlkmaar.png" alt="Imagem 3">
+          <img src="images/games/Benfica_AZAlkmaar.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio do Sport Lisboa e Benfica</p>
             <h2 class="text-bottom">10 APR 2014</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: -30px;">
+    </div>
+    <div class="ano" style="margin-top: -30px">
       <div class="row-year">
         <h1>2011</h1>
       </div>
       <div class="ticket">
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(147, 5, 5);">
+        <div class="left" style="background-color: rgb(147, 5, 5)">
           <div class="top">
             <p>CHAMPIONS LEAGUE</p>
             <h2>3 - 1</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/Benfica.png" alt="Imagem 1">
+            <img src="images/teams/Benfica.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Twente.png" alt="Imagem 2">
+            <img src="images/teams/Twente.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEN</p>
@@ -1190,29 +1628,29 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/Benfica_Twente.png" alt="Imagem 3">
+          <img src="images/games/Benfica_Twente.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio do Sport Lisboa e Benfica</p>
             <h2 class="text-bottom">24 AUG 2011</h2>
           </div>
         </div>
       </div>
-    </div> 
-    <div class="ano" style="margin-top: -30px;">
+    </div>
+    <div class="ano" style="margin-top: -30px">
       <div class="row-year">
         <h1>2009</h1>
       </div>
       <div class="ticket">
         <div class="faixa-left"></div>
-        <div class="left" style="background-color: rgb(231, 189, 0);">
+        <div class="left" style="background-color: rgb(231, 189, 0)">
           <div class="top">
             <p>LIGA PORTUGAL 2</p>
             <h2>2 - 2</h2>
           </div>
           <div class="bottom">
-            <img src="images/teams/BeiraMar.png" alt="Imagem 1">
+            <img src="images/teams/BeiraMar.png" alt="Imagem 1" />
             <p>vs</p>
-            <img src="images/teams/Feirense.png" alt="Imagem 2">
+            <img src="images/teams/Feirense.png" alt="Imagem 2" />
           </div>
           <div class="abrev">
             <p>BEI</p>
@@ -1221,15 +1659,15 @@
         </div>
         <div class="faixa-right"></div>
         <div class="right">
-          <img src="images/games/BeiraMar_Feirense.png" alt="Imagem 3">
+          <img src="images/games/BeiraMar_Feirense.png" alt="Imagem 3" />
           <div class="overlay">
             <p class="text-top">Estádio Municipal de Aveiro</p>
             <h2 class="text-bottom">03 MAY 2009</h2>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <script src="script.js"></script>
     <script src="redirectTo.js"></script>
-</body>
+  </body>
 </html>
