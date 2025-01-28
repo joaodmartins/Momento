@@ -13,7 +13,7 @@ body{
     font-size: 18px; /* tamanho da fonte */
     text-align: center; /* centralizar o texto */
     line-height: 1.5; /* altura da linha */
-    border-radius: 30px;
+    border-radius: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -25,8 +25,8 @@ body{
     margin-left: -20px;
     margin-right: -20px;
     margin-top: -20px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     height: 120px;
     width: 1300px;
 }
